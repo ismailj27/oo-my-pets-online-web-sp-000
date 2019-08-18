@@ -73,10 +73,12 @@ class Owner
   def sell_pets
     Dog.all.each do |d_dog|
       d_dog.mood = "nervous"
+      binding.pry
     end
     Cat.all.each do |d_cat|
       d_cat.mood = "nervous"
     end
+    
   end
   
   def list_pets

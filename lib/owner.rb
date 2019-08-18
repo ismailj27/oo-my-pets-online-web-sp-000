@@ -74,7 +74,6 @@ class Owner
     Dog.all.each do |d_dog|
       d_dog.mood = "nervous"
       d_dog.owner = Nil
-      binding.pry
     end
     Cat.all.each do |d_cat|
       d_cat.mood = "nervous"

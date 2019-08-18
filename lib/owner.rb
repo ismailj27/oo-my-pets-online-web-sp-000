@@ -73,6 +73,7 @@ class Owner
   def sell_pets
     Dog.all.each do |d_dog|
       d_dog.mood = "nervous"
+      d_dog.owner = Nil
       binding.pry
     end
     Cat.all.each do |d_cat|

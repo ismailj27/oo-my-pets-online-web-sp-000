@@ -74,11 +74,11 @@ class Owner
     Dog.all.each do |d_dog|
       d_dog.mood = "nervous"
       binding.pry
-      d_dog.owner
+      d_dog.owner = NIL
     end
     Cat.all.each do |d_cat|
       d_cat.mood = "nervous"
-      d_cat.owner
+      d_cat.owner = nil
     end
     
   end

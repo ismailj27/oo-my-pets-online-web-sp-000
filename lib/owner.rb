@@ -78,6 +78,7 @@ class Owner
     end
     Cat.all.each do |d_cat|
       d_cat.mood = "nervous"
+      d_cat.owner = Nil
     end
     
   end

@@ -73,11 +73,11 @@ class Owner
   def sell_pets
     Dog.all.each do |d_dog|
       d_dog.mood = "nervous"
-      remove_instance_variable(d_dog.owner)
+      d_dog.owner
     end
     Cat.all.each do |d_cat|
       d_cat.mood = "nervous"
-      remove_instance_variable(d_cat.owner)
+      d_cat.owner
     end
     
   end
